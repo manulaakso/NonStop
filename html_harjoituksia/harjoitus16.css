@@ -1,0 +1,52 @@
+@import url('https://fonts.googleapis.com/css?family=Lobster');
+
+.yksi
+{
+  color: green;
+  font-size: 20px;
+}
+.kaksi
+{
+  color: red;
+  font-size: 30px;
+}
+.kolme
+{
+  color: yellow;
+  font-size: 40px;
+}
+.nelja
+{
+  color: brown;
+  font-size: 50px;
+}
+.viisi
+{
+  color: magenta;
+  font-size: 60px;
+}
+
+.green
+{
+  color: green;
+}
+.Lobster
+{
+  font-family: Lobster, monospace;
+}
+.eka
+{
+  font-family: "Helvetica";
+}
+.toka
+{
+  font-family: "Arial";
+}
+.kolmas
+{
+  font-family: "Lucida Console", "Courier New", monospace;
+}
+.neljas
+{
+font-family: "Verdana";
+}
