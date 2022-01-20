@@ -1,28 +1,30 @@
 function mikaPaiva() {
 
+var paiva = parseInt(document.getElementById('numero').value);
+switch (paiva) {
 
-let paiva = parseInt(document.getElementById('numero').value);
-switch (paiva().mikaPaiva()) {
-  case 0:
-    paiva = "Sunday";
-    break;
   case 1:
-    paiva = "Monday";
+    paiva = "Maanantai";
     break;
   case 2:
-    paiva = "Tuesday";
+    paiva = "Tiistai";
     break;
   case 3:
-    paiva = "Wednesday";
+    paiva = "Keskiviikko";
     break;
   case 4:
-    paiva = "Thursday";
+    paiva = "Torstai";
     break;
   case 5:
-    paiva = "Friday";
+    paiva = "Perjantai";
     break;
   case  6:
-    paiva = "Saturday";
+    paiva = "Lauantai";
+    break;
+  case 7:
+      paiva = "Sunnuntai";
+      break;
 }
+
+document.getElementById("v2").innerHTML = "Tänään on " + paiva;
 }
-document.getElementById("v2").innerHTML = "Today is " + paiva;
