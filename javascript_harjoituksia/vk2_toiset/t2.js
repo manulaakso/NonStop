@@ -24,6 +24,7 @@ switch (paiva) {
   case 7:
       paiva = "Sunnuntai";
       break;
+      default: paiva = "!! valitse numeroiden 1-7 väliltä !!"
 }
 
 document.getElementById("v2").innerHTML = "Tänään on " + paiva;
