@@ -1,0 +1,27 @@
+@import url('https://fonts.googleapis.com/css?family=Noto+Sans');
+
+* , html, body, p {
+box-sizing: border-box;
+font-family: 'Noto Sans', sans-serif;
+padding: 0;
+text-align: center;
+align: center;
+}
+
+::placeholder {
+  color: lightgrey;
+  font-size: 1em;
+}
+
+table
+{
+  align-items: center;
+  margin: auto;
+}
+
+#retrieve
+{
+  font-size: 20px;
+	padding: 10px;
+	margin: 10px 0;
+}

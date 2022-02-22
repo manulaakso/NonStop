@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>Paikalliseen kansioon tallentava lomake</title>
+  <script type="text/javascript" src="main1.js"></script>
+  <link rel="stylesheet" href="main1.css">
+
+</head>
+<body>
+  <div id="formDiv">
+        <form id="carForm">
+            <h1>Paikallinen tallennusvarasto</h1>
+            <table>
+              <tr>
+                <td><label for="avain" >Avain: </label></td>
+                <td>  <input type="text" id="avain" placeholder="yksilöivä avain" required></td>
+              </tr>
+              <tr>
+                <td><label for="tieto1" >Etunimi: </label></td>
+                <td><input type="text" id="tieto1" placeholder="etunimi" required autofocus></td>
+              </tr>
+              <tr>
+                <td><label for="tieto2" >Sukunimi: </label></td>
+                <td><input type="text" id="tieto2" placeholder="sukunimi" required autofocus></td>
+              </tr>
+              <tr>
+                <td><label for="tieto3" >Lähiosoite: </label></td>
+                <td><input type="text" id="tieto3" placeholder="lähiosoite" required></td>
+              </tr>
+              <tr>
+                <td><label for="tieto4" >Postinumero: </label></td>
+                <td><input type="text" id="tieto4" placeholder="postinumero" required></td>
+              </tr>
+              <tr>
+                <td><label for="tieto5" >Puhelin: </label></td>
+                <td><input type="text" id="tieto5" placeholder="puhelin" required></td>
+              </tr>
+              <tr>
+                <td><label for="tieto6" >Sähköposti: </label></td>
+                <td><input type="text" id="tieto6" placeholder="sähköposti" required></td>
+              </tr>
+              <tr>
+                <td></td>
+                <td><button type="submit" onclick="store()">Tallenna arvot</button></td>
+              </tr>
+            </table>
+
+        </form>
+        <br>
+        <table>
+          <tr>
+            <td><label for="retrieveKey" >Anna hakuavain</label></td>
+          </tr>
+          <tr>
+            <td></td>
+            <td><input type="text" id="retrieveKey" placeholder="retrieveKey" required></td>
+          </tr>
+          <tr>
+            <td></td>
+            <td><button id="retrieveButton">Hae arkistosta</button></td>
+          </tr>
+          <tr>
+            <td>    <br></td>
+          </tr>
+          <div id="retrieve"></div>
+
+          <tr>
+            <td colspan=2><label for="removeKey" >Anna poistettavan tiedoston avain</label></td>
+          </tr>
+          <tr>
+            <td></td>
+            <td><input type="text" id="removeKey" placeholder="removeKey" required></td>
+          </tr>
+          <tr>
+            <td></td>
+            <td><button id="removeButton">Poista tietue</button></td>
+          </tr>
+          <tr>
+            <td></td>
+            <td><button id="clearButton">Poista kaikki tietueet</button></td>
+          </tr>
+        </table>
+  </div>
+  <div id="retrieve"></div>
+</body>
+</html>
